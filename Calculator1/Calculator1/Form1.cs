@@ -13,6 +13,20 @@ namespace Calculator1
     //public partial class Calculator1 : Form
     public partial class Calculator1 : Form
     {
+    
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+        
         string currentValue = string.Empty;       
         string operand1 = string.Empty;     
         string operand2 = string.Empty;     
@@ -211,19 +225,7 @@ namespace Calculator1
         private void Back_Click(object sender, EventArgs e)
         {
 
-        }
-        
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        }       
+
     }
 }
