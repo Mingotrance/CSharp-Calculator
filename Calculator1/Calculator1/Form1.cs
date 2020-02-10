@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Calculator1
 {
+    //public partial class Calculator1 : Form
     public partial class Calculator1 : Form
     {
         string currentValue = string.Empty;       
@@ -44,6 +45,13 @@ namespace Calculator1
             textBox.Text += currentValue;
         }
 
+        /*private void num3_Click(object sender, EventArgs e)
+        {
+            textBox.Text = "";
+            currentValue += "3";
+            textBox.Text += currentValue;
+        }*/
+        
         private void num3_Click(object sender, EventArgs e)
         {
             textBox.Text = "";
