@@ -40,7 +40,7 @@ namespace Calculator1
 
         private void num0_Click(object sender, EventArgs e)
         {
-            textBox.Text = "";
+            textBox.Text = "A";
             currentValue += "0";
             textBox.Text += currentValue;
         }
