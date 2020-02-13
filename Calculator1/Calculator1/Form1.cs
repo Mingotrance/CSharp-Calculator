@@ -43,21 +43,15 @@ namespace Calculator1
             textBox.Text = "";
             currentValue += "0";
             textBox.Text += currentValue;
+            List<TextLine> missingLinesInSource = PreviousLines.Where(p => !CurrentLines.Any(p2 => p2.ToString().Trim() == p.ToString().Trim())).ToList();
         }
-
-        private void num1_Click(object sender, EventArgs e)
-        {
-            textBox.Text = "";
-            currentValue += "1";
-            textBox.Text += currentValue;
-        }
+      
 
         private void num2_Click(object sender, EventArgs e)
         {
             textBox.Text = "";
             currentValue += "2";
             currentValue += "3";
-            currentValue += "4";
             textBox.Text += currentValue;
         }
 
