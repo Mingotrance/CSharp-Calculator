@@ -42,8 +42,7 @@ namespace Calculator1
         {
             textBox.Text = "";
             currentValue += "0";
-            textBox.Text += currentValue;
-            List<TextLine> missingLinesInSource = PreviousLines.Where(p => !CurrentLines.Any(p2 => p2.ToString().Trim() == p.ToString().Trim())).ToList();
+            textBox.Text += currentValue;         
         }
       
 
