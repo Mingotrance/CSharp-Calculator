@@ -59,14 +59,7 @@ namespace Calculator1
             textBox.Text = "";
             currentValue += "3";
             textBox.Text += currentValue;
-        }*/
-        
-        private void num3_Click(object sender, EventArgs e)
-        {
-            textBox.Text = "";
-            currentValue += "3";
-            textBox.Text += currentValue;
-        }
+        }*/      
 
         private void num4_Click(object sender, EventArgs e)
         {
